@@ -108,7 +108,8 @@ $db = mysqli_connect($db_host,$db_username,$db_password);
                 <td><?php echo $row['username'];?></td>
                 <td><?php echo $row['email'];?></td>
                 <td><?php echo $row['phone'];?></td>
-                <a class="btn btn-default" href="modify_member.php">修改</a>
+                <a class="btn btn-default" href="member_update.php">修改資料</a>
+                <a class="btn btn-default" href="password_update.php">變更密碼</a>
               </tr>
               
             </tbody>

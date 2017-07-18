@@ -82,7 +82,9 @@ $entries = $xpath->query("//*[@id='list1']/ul/a");
             <li><a href="#about">上映電影</a></li>
             <li><a href="#contact">線上訂票</a></li>
             <li class="active"><a href="ranking.php">電影排行榜</a></li>
+            <?php if($_SESSION["login_session"] == true): ?>
             <li><a href="member.php">會員資料</a></li>
+            <?php endif?>
           </ul>
           <?php if($_SESSION["login_session"] != true): ?>
           <form class="navbar-form navbar-right" role="form">
